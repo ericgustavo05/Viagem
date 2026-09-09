@@ -2,6 +2,96 @@
 //  ROTEIRO DE VIAGEM — Animações e Interatividade
 // =====================================================
 
+// ─── CARROSSEL DE FOTOS ───
+const carousels = {};
+
+function initCarousel(id) {
+  const track = document.getElementById(`track-${id}`);
+  const dotsContainer = document.getElementById(`dots-${id}`);
+  if (!track || !dotsContainer) return;
+
+  const slides = track.querySelectorAll('.carousel-slide');
+  const total = slides.length;
+  let current = 0;
+  let autoTimer = null;
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  // Criar dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Slide ${i + 1}`);
+    dot.addEventListener('click', () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function updateDots() {
+    dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    updateDots();
+    // Ken Burns: zoom na imagem ativa
+    slides.forEach((s, i) => {
+      const img = s.querySelector('img');
+      if (img) img.classList.toggle('zoomed', i === current);
+    });
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+
+  function startAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 4500);
+  }
+  function stopAuto() { clearInterval(autoTimer); }
+
+  // Touch swipe (mobile)
+  track.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+    stopAuto();
+  }, { passive: true });
+  track.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 40) {
+      diff > 0 ? next() : prev();
+    }
+    startAuto();
+  }, { passive: true });
+
+  // Pause on hover
+  const carouselEl = document.getElementById(`carousel-${id}`);
+  carouselEl?.addEventListener('mouseenter', stopAuto);
+  carouselEl?.addEventListener('mouseleave', startAuto);
+
+  // Start
+  goTo(0);
+  startAuto();
+
+  carousels[id] = { goTo, next, prev };
+}
+
+// Função global chamada pelos botões onclick no HTML
+function moveCarousel(id, direction) {
+  if (carousels[id]) {
+    direction > 0 ? carousels[id].next() : carousels[id].prev();
+  }
+}
+
+// Inicializa após DOM carregado
+document.addEventListener('DOMContentLoaded', () => {
+  initCarousel('madrid');
+  initCarousel('barcelona');
+  initCarousel('paris');
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // ─── INTERSECTION OBSERVER (Scroll animations) ───
