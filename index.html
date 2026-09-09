@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✈️ Roteiro de Viagem — Madrid · Barcelona · Paris</title>
+  <meta name="description" content="Roteiro épico de viagem: 4 dias em Madrid, parada em Barcelona na Sagrada Família e 4 dias inesquecíveis em Paris!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ✈️ HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="cloud cloud-1">☁️</div>
+      <div class="cloud cloud-2">☁️</div>
+      <div class="cloud cloud-3">☁️</div>
+      <div class="cloud cloud-4">☁️</div>
+    </div>
+    <div class="plane-track">
+      <div class="plane" id="plane">✈️</div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge animate-pop">🗺️ Roteiro de Viagem</div>
+      <h1 class="hero-title animate-up">
+        <span class="gradient-text">Madrid</span> ·
+        <span class="gradient-text-2">Barcelona</span> ·
+        <span class="gradient-text-3">Paris</span>
+      </h1>
+      <p class="hero-subtitle animate-up delay-1">9 dias de aventura pela Europa 🇪🇸🇫🇷</p>
+      <div class="hero-stats animate-up delay-2">
+        <div class="stat">
+          <span class="stat-num">9</span>
+          <span class="stat-label">Dias</span>
+        </div>
+        <div class="stat-divider">•</div>
+        <div class="stat">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Cidades</span>
+        </div>
+        <div class="stat-divider">•</div>
+        <div class="stat">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">Atrações</span>
+        </div>
+      </div>
+      <a href="#roteiro" class="hero-btn animate-up delay-3">
+        Ver Roteiro Completo
+        <span class="btn-arrow">↓</span>
+      </a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- 🗺️ VISÃO GERAL DO ROTEIRO -->
+  <section class="overview" id="roteiro">
+    <div class="container">
+      <div class="section-tag">📅 Cronograma</div>
+      <h2 class="section-title">Visão Geral da Viagem</h2>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item animate-left" data-city="madrid">
+          <div class="timeline-dot madrid-dot">🇪🇸</div>
+          <div class="timeline-card">
+            <div class="timeline-days">Dias 1–4</div>
+            <h3>Madrid</h3>
+            <p>Capital espanhola cheia de arte, futebol e montanhas nevadas!</p>
+            <div class="timeline-tags">
+              <span>⚽ Bernabéu</span>
+              <span>🏔️ Navacerrada</span>
+              <span>🍷 Gastronomia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-right" data-city="barcelona">
+          <div class="timeline-dot barcelona-dot">⛪</div>
+          <div class="timeline-card highlight-card">
+            <div class="timeline-days">Parada Especial</div>
+            <h3>Barcelona</h3>
+            <p>Uma parada mágica no caminho para Paris!</p>
+            <div class="timeline-tags">
+              <span>🏛️ Sagrada Família</span>
+              <span>🌊 La Barceloneta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item animate-left" data-city="paris">
+          <div class="timeline-dot paris-dot">🇫🇷</div>
+          <div class="timeline-card">
+            <div class="timeline-days">Dias 5–8</div>
+            <h3>Paris</h3>
+            <p>A cidade luz! Arte, romance e a Torre Eiffel ao pôr do sol.</p>
+            <div class="timeline-tags">
+              <span>🖼️ Louvre</span>
+              <span>🗼 Torre Eiffel</span>
+              <span>🥐 Croissants</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🇪🇸 MADRID -->
+  <section class="city-section madrid-section" id="madrid">
+    <div class="city-header">
+      <div class="city-flag">🇪🇸</div>
+      <div class="city-label">Dias 1 ao 4</div>
+      <h2 class="city-name">Madrid</h2>
+      <p class="city-desc">A vibrante capital da Espanha. Arte, futebol, tapas e a Serra de Guadarrama!</p>
+    </div>
+
+    <div class="attractions-grid container">
+
+      <!-- Bernabéu -->
+      <div class="attraction-card animate-up" id="bernabeu-card">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1636033468819-a1f6bee74e0a?w=800&q=80"
+            alt="Estádio Santiago Bernabéu em Madrid"
+            class="card-img"
+            loading="lazy"
+            onerror="this.src='https://images.unsplash.com/photo-1589487391730-58f20eb2c308?w=800&q=80'"
+          />
+          <div class="card-overlay">
+            <span class="card-day">Dia 1</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">⚽</div>
+          <h3>Santiago Bernabéu</h3>
+          <p>O icônico estádio do Real Madrid! Faça o tour completo e sinta a energia de um dos maiores clubes do mundo. A reforma recente deixou o estádio ainda mais impressionante.</p>
+          <div class="card-meta">
+            <span class="meta-item">📍 Madrid</span>
+            <span class="meta-item">⏱️ 2-3 horas</span>
+            <span class="meta-item">🎟️ Tour disponível</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navacerrada -->
+      <div class="attraction-card animate-up delay-1" id="navacerrada-card">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=800&q=80"
+            alt="Serra de Navacerrada com neve"
+            class="card-img"
+            loading="lazy"
+          />
+          <div class="card-overlay">
+            <span class="card-day">Dia 2</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🏔️</div>
+          <h3>Navacerrada</h3>
+          <p>A apenas 50km de Madrid, o Puerto de Navacerrada oferece paisagens de tirar o fôlego na Serra de Guadarrama. No inverno neve, no verão trilhas incríveis!</p>
+          <div class="card-meta">
+            <span class="meta-item">📍 Sierra de Guadarrama</span>
+            <span class="meta-item">⏱️ Dia inteiro</span>
+            <span class="meta-item">🚗 50km de Madrid</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Madrid Centro -->
+      <div class="attraction-card animate-up delay-2" id="madrid-centro-card">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=800&q=80"
+            alt="Puerta del Sol em Madrid"
+            class="card-img"
+            loading="lazy"
+          />
+          <div class="card-overlay">
+            <span class="card-day">Dias 3 e 4</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🏛️</div>
+          <h3>Madrid Centro</h3>
+          <p>Explore a Puerta del Sol, o Gran Vía, o Parque del Retiro e o Museu do Prado. Madrid tem arte e cultura por todos os lados. Não esqueça as tapas no Mercado de San Miguel!</p>
+          <div class="card-meta">
+            <span class="meta-item">📍 Centro Histórico</span>
+            <span class="meta-item">🍷 Tapas & Vinho</span>
+            <span class="meta-item">🎨 Museu do Prado</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ⛪ BARCELONA (parada) -->
+  <section class="city-section barcelona-section" id="barcelona">
+    <div class="transit-banner">
+      <span>✈️</span>
+      <span>Madrid → Barcelona → Paris</span>
+      <span>🚄</span>
+    </div>
+    <div class="city-header">
+      <div class="city-flag">⛪</div>
+      <div class="city-label">Parada Especial no Trajeto</div>
+      <h2 class="city-name">Barcelona</h2>
+      <p class="city-desc">No caminho para Paris, uma parada imperdível para ver a obra-prima de Gaudí!</p>
+    </div>
+
+    <div class="barcelona-feature container">
+      <div class="barcelona-img-wrap animate-left">
+        <img
+          src="https://images.unsplash.com/photo-1583422409516-2895a77efded?w=900&q=80"
+          alt="Sagrada Família em Barcelona"
+          class="barcelona-img"
+          loading="lazy"
+        />
+        <div class="img-badge">📸 Sagrada Família</div>
+      </div>
+      <div class="barcelona-text animate-right">
+        <div class="card-icon">🏛️</div>
+        <h3>Sagrada Família</h3>
+        <p>A obra-prima inacabada de Antoni Gaudí é simplesmente de tirar o fôlego. Em construção desde 1882 e ainda em progresso, cada detalhe é uma jornada artística única.</p>
+        <ul class="feature-list">
+          <li>🌟 Patrimônio da UNESCO</li>
+          <li>🏗️ Em construção desde 1882</li>
+          <li>⏱️ Reserve pelo menos 2 horas</li>
+          <li>🎟️ Compre os ingressos online com antecedência</li>
+          <li>📸 Vista noturna é deslumbrante</li>
+        </ul>
+        <div class="barcelona-tip">
+          💡 <strong>Dica:</strong> Pegue o trem AVE Madrid–Barcelona (3h) e depois Barcelona–Paris (6h).
+        </div>
+      </div>
+    </div>
+
+    <div class="extra-barca container">
+      <div class="extra-card animate-up">
+        <img src="https://images.unsplash.com/photo-1562699289-8cd1dcdbded3?w=600&q=80" alt="Las Ramblas Barcelona" loading="lazy" />
+        <div class="extra-info">
+          <h4>🌿 Las Ramblas</h4>
+          <p>O famoso boulevard com artistas de rua, flores e mercados</p>
+        </div>
+      </div>
+      <div class="extra-card animate-up delay-1">
+        <img src="https://images.unsplash.com/photo-1523531294919-4bcd7c65e216?w=600&q=80" alt="Park Güell Barcelona" loading="lazy" />
+        <div class="extra-info">
+          <h4>🐉 Park Güell</h4>
+          <p>Outro espetáculo de Gaudí com vista panorâmica da cidade</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🇫🇷 PARIS -->
+  <section class="city-section paris-section" id="paris">
+    <div class="city-header">
+      <div class="city-flag">🇫🇷</div>
+      <div class="city-label">Dias 5 ao 8</div>
+      <h2 class="city-name">Paris</h2>
+      <p class="city-desc">A Cidade Luz! Arte, romance, croissants e a Torre Eiffel ao pôr do sol ✨</p>
+    </div>
+
+    <div class="attractions-grid container">
+
+      <!-- Louvre -->
+      <div class="attraction-card animate-up" id="louvre-card">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=800&q=80"
+            alt="Museu do Louvre em Paris"
+            class="card-img"
+            loading="lazy"
+          />
+          <div class="card-overlay">
+            <span class="card-day">Dia 5</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🖼️</div>
+          <h3>Museu do Louvre</h3>
+          <p>O maior museu de arte do mundo! Da Mona Lisa à Vênus de Milo, são mais de 35.000 obras. Reserve ao menos uma tarde inteira para explorar as alas mais famosas.</p>
+          <div class="card-meta">
+            <span class="meta-item">📍 Paris, 1er</span>
+            <span class="meta-item">⏱️ 3-4 horas</span>
+            <span class="meta-item">🎟️ €22 adulto</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Torre Eiffel -->
+      <div class="attraction-card animate-up delay-1" id="eiffel-card">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1511739001486-6bfe10ce785f?w=800&q=80"
+            alt="Torre Eiffel em Paris"
+            class="card-img"
+            loading="lazy"
+          />
+          <div class="card-overlay">
+            <span class="card-day">Dia 6</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🗼</div>
+          <h3>Torre Eiffel</h3>
+          <p>Símbolo máximo de Paris! Suba ao topo para uma vista 360° da cidade. O show de luzes à noite é absolutamente mágico — não perca!</p>
+          <div class="card-meta">
+            <span class="meta-item">📍 Champ de Mars</span>
+            <span class="meta-item">⏱️ 2-3 horas</span>
+            <span class="meta-item">✨ Show de luzes à noite</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Montmartre -->
+      <div class="attraction-card animate-up delay-2" id="montmartre-card">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?w=800&q=80"
+            alt="Sacré-Cœur em Montmartre Paris"
+            class="card-img"
+            loading="lazy"
+          />
+          <div class="card-overlay">
+            <span class="card-day">Dias 7 e 8</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon">🎨</div>
+          <h3>Montmartre & Sacré-Cœur</h3>
+          <p>O bairro dos artistas! Suba as escadarias até a Basílica Sacré-Cœur para uma vista incrível de Paris. Explore as ruas pitorescas e os cafés charmosos.</p>
+          <div class="card-meta">
+            <span class="meta-item">📍 18e arrondissement</span>
+            <span class="meta-item">🎨 Bairro artístico</span>
+            <span class="meta-item">☕ Cafés parisienses</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 📋 RESUMO / DICAS -->
+  <section class="tips-section" id="dicas">
+    <div class="container">
+      <div class="section-tag">💡 Dicas Essenciais</div>
+      <h2 class="section-title">Antes de Partir</h2>
+      <div class="tips-grid">
+        <div class="tip-card animate-up">
+          <div class="tip-icon">🛂</div>
+          <h4>Documentos</h4>
+          <p>Passaporte válido é obrigatório. Brasileiros não precisam de visto para visitar Espanha e França (Zona Schengen, até 90 dias).</p>
+        </div>
+        <div class="tip-card animate-up delay-1">
+          <div class="tip-icon">🚄</div>
+          <h4>Transporte</h4>
+          <p>Trem AVE é a melhor opção! Madrid–Barcelona (3h) e Barcelona–Paris (6h via trem). Reserve com antecedência no Renfe e Ouigo.</p>
+        </div>
+        <div class="tip-card animate-up delay-2">
+          <div class="tip-icon">💶</div>
+          <h4>Moeda & Pagamentos</h4>
+          <p>Euro (€) é a moeda em ambos países. Cartões são amplamente aceitos. Tenha sempre algum dinheiro em espécie para pequenos mercados.</p>
+        </div>
+        <div class="tip-card animate-up delay-3">
+          <div class="tip-icon">📱</div>
+          <h4>Conectividade</h4>
+          <p>Chip europeu (ex: Airalo eSIM) funciona em toda a zona Schengen. Google Maps funciona offline — baixe os mapas antes!</p>
+        </div>
+        <div class="tip-card animate-up">
+          <div class="tip-icon">🎟️</div>
+          <h4>Reservas</h4>
+          <p>Compre ingressos online com antecedência para Louvre, Sagrada Família e Bernabéu. Evite filas imensas!</p>
+        </div>
+        <div class="tip-card animate-up delay-1">
+          <div class="tip-icon">🌡️</div>
+          <h4>Clima</h4>
+          <p>Madrid e Barcelona têm clima mediterrâneo. Paris pode ser mais fria. Leve camadas e um casaco para Navacerrada!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🗓️ ITINERÁRIO DIA A DIA -->
+  <section class="itinerary-section" id="itinerario">
+    <div class="container">
+      <div class="section-tag">🗓️ Dia a Dia</div>
+      <h2 class="section-title">Itinerário Completo</h2>
+      <div class="days-grid">
+
+        <div class="day-card madrid-theme animate-up">
+          <div class="day-num">01</div>
+          <div class="day-flag">🇪🇸</div>
+          <div class="day-city">Madrid</div>
+          <div class="day-highlight">⚽ Santiago Bernabéu</div>
+          <p>Chegada em Madrid, check-in e tour imperdível no Bernabéu. Jantar no Gran Vía!</p>
+        </div>
+
+        <div class="day-card madrid-theme animate-up delay-1">
+          <div class="day-num">02</div>
+          <div class="day-flag">🏔️</div>
+          <div class="day-city">Navacerrada</div>
+          <div class="day-highlight">🏔️ Serra de Guadarrama</div>
+          <p>Dia na montanha! Trilhas, ar puro e paisagens de tirar o fôlego a 1800m.</p>
+        </div>
+
+        <div class="day-card madrid-theme animate-up delay-2">
+          <div class="day-num">03</div>
+          <div class="day-flag">🇪🇸</div>
+          <div class="day-city">Madrid</div>
+          <div class="day-highlight">🏛️ Museu do Prado</div>
+          <p>Arte clássica no Prado, tarde no Retiro, tapas no Mercado de San Miguel.</p>
+        </div>
+
+        <div class="day-card madrid-theme animate-up">
+          <div class="day-num">04</div>
+          <div class="day-flag">🇪🇸</div>
+          <div class="day-city">Madrid</div>
+          <div class="day-highlight">🛍️ Puerta del Sol</div>
+          <p>Último dia em Madrid: compras no El Rastro, Palácio Real e bairro de La Latina.</p>
+        </div>
+
+        <div class="day-card barcelona-theme animate-up delay-1">
+          <div class="day-num">⛪</div>
+          <div class="day-flag">⛪</div>
+          <div class="day-city">Barcelona</div>
+          <div class="day-highlight">🏛️ Sagrada Família</div>
+          <p>Parada especial! Trem AVE de manhã, Sagrada Família ao meio-dia, trem para Paris à tarde.</p>
+        </div>
+
+        <div class="day-card paris-theme animate-up delay-2">
+          <div class="day-num">05</div>
+          <div class="day-flag">🇫🇷</div>
+          <div class="day-city">Paris</div>
+          <div class="day-highlight">🖼️ Museu do Louvre</div>
+          <p>Chegada a Paris! Tarde no Louvre, jantar às margens do Sena.</p>
+        </div>
+
+        <div class="day-card paris-theme animate-up">
+          <div class="day-num">06</div>
+          <div class="day-flag">🗼</div>
+          <div class="day-city">Paris</div>
+          <div class="day-highlight">🗼 Torre Eiffel</div>
+          <p>Dia na Torre Eiffel: visita ao topo ao meio-dia, Champs-Élysées à tarde, show de luzes à noite!</p>
+        </div>
+
+        <div class="day-card paris-theme animate-up delay-1">
+          <div class="day-num">07</div>
+          <div class="day-flag">🇫🇷</div>
+          <div class="day-city">Paris</div>
+          <div class="day-highlight">🎨 Montmartre</div>
+          <p>Bairro boêmio de Montmartre, Sacré-Cœur, artistas de rua e almoço parisiense.</p>
+        </div>
+
+        <div class="day-card paris-theme animate-up delay-2">
+          <div class="day-num">08</div>
+          <div class="day-flag">🇫🇷</div>
+          <div class="day-city">Paris</div>
+          <div class="day-highlight">🛍️ Marais & Notre-Dame</div>
+          <p>Último dia! Explore Le Marais, visite Notre-Dame e um último café antes de partir.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-plane">✈️</div>
+    <h3>Boa Viagem! 🎉</h3>
+    <p>Madrid · Barcelona · Paris — uma aventura inesquecível espera por você</p>
+    <div class="footer-flags">🇧🇷 → 🇪🇸 → ⛪ → 🇫🇷</div>
+    <p class="footer-small">Feito com ❤️ para a melhor viagem da vida</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
